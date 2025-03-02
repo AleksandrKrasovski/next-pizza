@@ -1,6 +1,6 @@
 'use strict';
 
-import { Container, Title } from "@/components/shared";
+import { Container, ProductsGroupList, Title } from "@/components/shared";
 // import { CheckboxFiltersGroup } from "@/components/shared";
 import { Topbar } from "@/components/shared/top-bar";
 import { Filters } from "@/components/shared/filters";
@@ -14,34 +14,134 @@ export default function Home() {
         <Title text="Все пиццы" size="lg" className="font-extrabold"/>
       </Container>
 
-      <Topbar />
+      <Topbar className="min-w-[1000px]"/>
 
       <Container className="mt-10 pb-14">
-        <div className="flex gap-[60px]">
-          
+        <div className="flex gap-[80px]">
+
           {/* Filtration */}
           <div className="w-[250px]">
             <Filters />
           </div>
           
           {/* Goods List */}
-          <div className="flex-1">
-            <div className="flex flex-col gap-16">Список товаров 1</div>
-            <div className="flex flex-col gap-16">Список товаров 2</div>
+          <div>
+            <div className="flex-1 min-w-[1060px]">
+              <div className="flex flex-col gap-16">
+                <ProductsGroupList
+                  title="Пиццы" 
+                  items={[
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                  ]} categoryId={0} />
+              </div>
+            </div>
+
+            <div className="flex-1">
+              <div className="flex flex-col gap-16">
+                <ProductsGroupList 
+                  title="Завтрак" 
+                  items={[
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                    {
+                      id: 1,
+                      name: 'Чизбургер-пицца',
+                      imageUrl: 
+                        'https://media.dodostatic.net/image/r:292x292/11ee7d5f06cb389898c7ff7b707f03a0.jpg',
+                      price: 550,
+                      items: [{ price: 550 }]
+                    },
+                  ]} categoryId={0} />
+              </div>
+            </div>
           </div>
         </div>
       </Container>
-{/* 
-      <CheckboxFiltersGroup 
-        title='55555' 
-        items={[]}
-        defaultItems={[]}
-        limit={5}
-        searchInputPlaceholder="Search..."
-        onChange={() => {}}
-        defaultValue={[]}
-        className=""
-      /> */}
     </>
   );
 }
