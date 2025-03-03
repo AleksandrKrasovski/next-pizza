@@ -1,7 +1,11 @@
+'use client'
+
 import * as React from 'react';
+
 import { Title } from './title';
 import { cn } from '@/lib/utils';
 import { ProductCard } from './product-card';
+// import { Type } from 'lucide-react';
 
 
 interface Props {
@@ -15,14 +19,15 @@ interface Props {
 
 export const ProductsGroupList: React.FC<Props> = ({ 
   title = '', 
-  items = [], 
+  items = [],
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   categoryId = 0, 
   className,
   listClassName
 }) => {
+
   return (
-    <div className={className}>
+    <div className={className} id={title}>
       <Title text={title} size='lg' className='font-extrabold mb-5' />
 
       <div className={cn('grid grid-cols-3 gap-[50px]', listClassName)}>
