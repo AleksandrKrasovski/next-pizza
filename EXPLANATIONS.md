@@ -128,3 +128,20 @@ npm install lucide-react
 * do not work, uninstaall: 
   * delete from `package.json`
   * `npm i` in terminal
+
+## Prisma Lib and Prisma/client Lib
+
+* (docs/getting-started)[https://www.prisma.io/docs/getting-started]
+* `Prisma` in `PostgreSQL` is like `Monguse` for `mongoDB`
+* 02:32:50 install prisma:
+  * `npm i prisma @prisma/client`
+  * `prisma` folder
+    * `prisma-client` file:
+      * (best practices)[ttps://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices] was not be find
+      * (prisma/client docs)[https://www.prisma.io/docs/orm/prisma-client]
+
+
+## Vercel.com
+
+* (vercel)[https://vercel.com]
+* 
