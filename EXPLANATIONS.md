@@ -140,6 +140,18 @@ npm install lucide-react
       * (best practices)[ttps://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices] was not be find
       * (prisma/client docs)[https://www.prisma.io/docs/orm/prisma-client]
 
+## Zustand 
+
+* (zustand-vs-redux)[https://www.wisp.blog/blog/zustand-vs-redux-making-sense-of-react-state-management]
+  * Note: 
+  Выбор между `Zustand` и `Redux` заключается не в том, что «лучше», 
+  а в том, что лучше соответствует вашим конкретным потребностям. 
+  `Zustand` превосходит простоту и быструю реализацию, 
+  в то время как `Redux Toolkit` обеспечивает надежную структуру для сложных приложений. 
+  Помните, что вам не всегда нужна библиотека управления государством.```
+* (`zustand-demo`)[https://zustand-demo.pmnd.rs]
+* `npm i zustand`
+* `store` fold
 
 ## Vercel.com
 
