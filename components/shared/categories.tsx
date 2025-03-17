@@ -31,7 +31,9 @@ export const Categories: React.FC<Props> = ({ className }) => {
           <a className={cn(
             'inline-flex items-center font-bold h-10 rounded-2xl px-5',
             categoriyActiveId === index && 'bg-white shadow-md shadow-gray-200 text-primary',                    
-            )} key={index}>
+            )} 
+            href={'/#${name}'}
+            key={index}>
             <button>{name}</button>
           </a>
         ))

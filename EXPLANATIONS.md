@@ -1,7 +1,5 @@
 # Main
 
-15211
-
 ## Sources
 
 * [Youtube](https://www.youtube.com/watch?v=GUwizGbY4cc)
@@ -129,7 +127,9 @@ npm install lucide-react
   * delete from `package.json`
   * `npm i` in terminal
 
-## Prisma Lib and Prisma/client Lib
+## Data Base
+
+### Prisma Lib and Prisma/client Lib
 
 * (docs/getting-started)[https://www.prisma.io/docs/getting-started]
 * `Prisma` in `PostgreSQL` is like `Monguse` for `mongoDB`
@@ -140,7 +140,18 @@ npm install lucide-react
       * (best practices)[ttps://www.prisma.io/docs/orm/more/help-and-troubleshooting/help-articles/nextjs-prisma-client-dev-practices] was not be find
       * (prisma/client docs)[https://www.prisma.io/docs/orm/prisma-client]
 
-## Zustand 
+### TablePlus vs Prisma Studio
+
+* `how` and `what for` to use `TablePlus` - 03:04:24 [Youtube](https://www.youtube.com/watch?v=GUwizGbY4cc)
+* [TablePlus](https://docs.tableplus.com)
+
+```text
+TablePlus is a modern, native tool with elegant UI that 
+allows you to simultaneously manage multiple databases such as 
+MySQL, PostgreSQL, SQLite, Microsoft SQL Server and more.
+```
+
+### Zustand 
 
 * (zustand-vs-redux)[https://www.wisp.blog/blog/zustand-vs-redux-making-sense-of-react-state-management]
   * Note: 
@@ -153,7 +164,45 @@ npm install lucide-react
 * `npm i zustand`
 * `store` fold
 
-## Vercel.com
+### Vercel.com
 
-* (vercel)[https://vercel.com]
-* 
+* create 
+  * `Neon` (db)[https://vercel.com/alivs-projects/~/stores] named as `next-pizza`
+  * `.env` file
+* `npx prisma db push`
+
+```bash
+Environment variables loaded from .env
+Prisma schema loaded from prisma/schema.prisma
+Datasource "bd": PostgreSQL database "neondb", schema "public" at "ep-summer-sound-a25czxqi-pooler.eu-central-1.aws.neon.tech"
+🚀  Your database is now in sync with your Prisma schema
+✔ Generated Prisma Client (v6.4.1) to ./node_modules/@prisma/client
+```
+
+* in `package.json`:
+  * add these:
+
+```json
+{
+  ...,
+  "scripts": {
+    ...,
+    "prisma:push": "prisma db push",
+    "prisma:studio": "prisma studio"
+  },
+  ...
+}
+```
+
+  * press "scripts", choose `npm run prisma:studio`
+
+```bash
+...
+Prisma Studio is up on http://localhost:5555
+...
+```
+
+### Next Api
+
+* [theory](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
+* create `app/api/users/route.ts`
