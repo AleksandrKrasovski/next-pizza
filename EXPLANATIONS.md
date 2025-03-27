@@ -206,3 +206,12 @@ Prisma Studio is up on http://localhost:5555
 
 * [theory](https://nextjs.org/docs/app/building-your-application/routing/route-handlers)
 * create `app/api/users/route.ts`
+
+## Prisma Seeding
+
+* [docs](https://www.prisma.io/docs/orm/prisma-migrate/workflows/seeding)
+* `npm i ts-node`
+* create 
+  * prisma/seed.ts
+    * `npm i @types/bcrypt bcrypt`
+    
