@@ -214,4 +214,5 @@ Prisma Studio is up on http://localhost:5555
 * create 
   * prisma/seed.ts
     * `npm i @types/bcrypt bcrypt`
-    
+* `npm prisma db seed`
+* ERROR
