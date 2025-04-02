@@ -129,10 +129,24 @@ npm install lucide-react
 
 ## Data Base
 
+### API Router
+
+NOTE: In different frameworks, API routers handle incoming requests and map them to specific server-side functions or controllers, facilitating management and organization.
+
+* for server-side application `Our API Router`:
+  * do not uses:
+    * `Node.js` :
+      * with `Express` or
+      * with `Nest.js`
+  * will be inside `Next.js`
+
 ### Prisma Lib and Prisma/client Lib
 
+* `Prisma` is a helper (agent, mediator, intermediary) between `Next.js Appp` and `Vercel Database`
+  * `Vercel` is used for `DataBase` storing and deploying `Next-pizza App`
 * (docs/getting-started)[https://www.prisma.io/docs/getting-started]
-* `Prisma` in `PostgreSQL` is like `Monguse` for `mongoDB`
+* `Prisma` for `PostgreSQL` is like `Monguse` for `mongoDB`
+* `Prisma` generates `.json`
 * 02:32:50 install prisma:
   * `npm i prisma @prisma/client`
   * `prisma` folder
@@ -216,4 +230,4 @@ Prisma Studio is up on http://localhost:5555
     * `npm i @types/bcrypt bcrypt`
 * `npm prisma db seed`
 * ERROR
-
+03:37:00
